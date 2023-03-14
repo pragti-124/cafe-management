@@ -1,5 +1,3 @@
-
-                                                         # CAFE MANAGEMENT:
 from tkinter import*
 import random
 import time
@@ -36,15 +34,13 @@ def Ref():
     cofi= float(Filet.get())
     cochee= float(Cheese_burger.get())
     codr= float(Drinks.get())
-   
-    
-    costoffries = cof*90
-    costoflargefries = colfries*140
-    costofburger = cob*135
-    costoffilet = cofi*150
-    costofcheeseburger = cochee*160
-    costofdrinks = codr*40
 
+    costoffries = cof*25
+    costoflargefries = colfries*40
+    costofburger = cob*35
+    costoffilet = cofi*50
+    costofcheeseburger = cochee*30
+    costofdrinks = codr*35
 
     costofmeal = "Rs.",str('%.2f'% (costoffries +  costoflargefries + costofburger + costoffilet + costofcheeseburger + costofdrinks))
     PayTax=((costoffries +  costoflargefries + costofburger + costoffilet +  costofcheeseburger + costofdrinks)*0.33)
@@ -78,6 +74,7 @@ def reset():
     cost.set("")
     Cheese_burger.set("")
 
+
 #---------------------------------------------------------------------------------------
 rand = StringVar()
 Fries = StringVar()
@@ -91,7 +88,6 @@ Drinks = StringVar()
 Tax = StringVar()
 cost = StringVar()
 Cheese_burger = StringVar()
-
 
 
 lblreference = Label(f1, font=( 'aria' ,16, 'bold' ),text="Order No.",fg="green",bd=20,anchor='w')
@@ -210,4 +206,3 @@ btnprice=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),w
 btnprice.grid(row=8, column=0)
 
 root.mainloop()
-    
